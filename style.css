@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgba(32, 33, 36, 1);
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Navbar */
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 1rem;
+	height: 70px;
+}
+.navbar ul {
+	list-style: none;
+	font-size: 0.9rem;
+}
+.navbar ul li {
+	display: flex;
+}
+.navbar ul li a {
+	cursor: pointer;
+}
+.navbar .left-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 1rem;
+}
+.navbar .left-link a {
+	margin-left: 1rem;
+}
+.navbar .left-link a:hover {
+	text-decoration: underline;
+}
+.navbar ul li .icon {
+	flex: 1;
+	margin-left: 5px;
+}
+
+.right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	width: 48px;
+	border-radius: 100%;
+}
+.right:hover {
+	background-color: rgba(109, 105, 105, 0.3);
+}
+.right .gmail {
+	padding: 5px;
+}
+.right.gmail a {
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(194, 24, 91);
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+}
+
+/* Container*/
+
+.container {
+	width: 100%;
+	min-height: 365px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.google {
+	max-width: 100%;
+	max-height: 100%;
+	width: 328px;
+	height: 110px;
+	margin-bottom: 2rem;
+}
+.searchbox {
+	width: 700px;
+}
+.searchbox-in {
+	display: flex;
+	position: relative;
+	width: 100%;
+	border-radius: 30px;
+	border: 1px solid rgba(91, 95, 100, 1);
+	background-color: rgba(32, 33, 36, 1);
+}
+.searchbox-in input:focus {
+	outline: none;
+}
+.searchbox-in:hover {
+	background-color: rgb(48, 49, 52);
+}
+
+.searchbox-in input {
+	font-size: 1.1rem;
+	font-weight: 100;
+	border: none;
+	background: transparent;
+	color: #fff;
+	width: 78%;
+	padding: 1.2rem 0;
+}
+.searchbox-in .search-icon {
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+}
+.searchbox-in .right-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	padding: 0 1.5rem;
+	font-size: 1.5rem;
+}
+
+/*Buttons*/
+
+.searchbox-out {
+	padding: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+.searchbox-out a {
+	padding: 0.6rem 1rem;
+	margin: 1rem 0.5rem;
+	background-color: #303134;
+	border: 1px solid #303134;
+	border-radius: 4px;
+	color: #e8eaed;
+	font-family: arial, sans-serif;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+}
+
+.searchbox-out a:hover {
+	border: 1px solid rgb(106, 106, 106);
+}
+
+.paragraph {
+	color: #bdc1c6;
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	margin-bottom: 24px;
+}
+.paragraph a {
+	color: #8ab4f8;
+	padding-left: 5px;
+}
+.paragraph a:hover {
+	text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+	background-color: rgb(23, 23, 23);
+	position: fixed;
+	bottom: 0px;
+	min-width: 100%;
+}
+
+footer .top {
+	padding: 17px 30px;
+	border-bottom: 1px solid #3c4043;
+	font-size: 1.1rem;
+	color: #9aa0a6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer .bottom {
+	color: #999da2;
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer .bottom a {
+	display: inline-block;
+	color: #999da2;
+	padding: 20px;
+}
+
+footer .bottom a:hover {
+	text-decoration: underline;
+}
